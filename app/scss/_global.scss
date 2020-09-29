@@ -1,0 +1,38 @@
+html{
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+
+ul,
+li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+body{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 15px;
+    line-height: 24px;
+}
+button{
+    cursor: pointer;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.box-border{
+    box-shadow: 0px 2px 4px 0px rgba(108,111,115,0.1);
+    background-color: #fff;
+    border-radius: 3px;
+}
