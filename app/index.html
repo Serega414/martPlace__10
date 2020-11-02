@@ -26,29 +26,35 @@
 						<div class="header__seller">
 							<a href="#" class=""> Become a Seller </a>
 						</div>
-						<div class="header-box-icons">
-							<a class="header__alarm" href="#">
+						<div class="header__icons" >
+							<ul class="header-box-icons">
+								<li><a class="header__alarm" href="#">
 								<img src="./images/icons/alarm-icon.png" alt="" />
-								<p class="alarm__num">14</p>
-							</a>
-							<a class="header__message" href="#">
+								<!-- <p class="alarm__num">14</p> -->
+							</a></li>
+								<li><a class="header__message" href="#">
 								<img src="./images/icons/message-btn.png" alt="" />
-								<p class="message__num">14</p>
-							</a>
-							<a class="header__basket" href="#">
+								<!-- <p class="message__num">14</p> -->
+							</a></li>
+								<li><a class="header__basket" href="#">
 								<img src="./images/icons/basket-btn.png" alt="" />
-								<p class="basket__num">14</p>
-							</a>
+								<!-- <p class="basket__num">14</p> -->
+							</a></li>
+							</ul>
 						</div>
 						<div class="header__user">
-							<div class="user__name">
-								<a class="user__ava" href="#">
-									<img src="/app/images/icons/icon-user.png" alt="" />
+							<div class="header__user-img">
+								<a href="#">
+									<img src="./images/icons/icon-user.png" alt="">
 								</a>
-								Taofiq Hakim
 							</div>
-							<div class="user__money">
-								<span>$20.45</span>
+							<div class="header__user-info">
+								<div class="header__user-name">
+									<a href="#">Taofiq Hakim</a>
+								</div>
+								<div class="header__user-numb">
+									<a href="#">$20.45</a>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -63,7 +69,7 @@
 							<a href="#"> HOME </a>
 						</li>
 						<li>
-							<a href="#"> all products </a>
+							<a href="new-items.html"> all products </a>
 						</li>
 						<li>
 							<a href="#"> WordPress </a>
@@ -95,8 +101,7 @@
 	<section class="search">
 		<div class="container">
 			<div class="search__inner">
-				<div class="search__inner-title">Create Your Own</div>
-				<div class="search__inner-text">Digital Product Marketplace</div>
+				<div class="search__inner-title">Create Your Own <span>Digital Product Marketplace</span> </div>
 				<div class="search__inner-descr">
 					MartPlace is the most powerful, & customizable template for Easy Digital Downloads Products
 				</div>
@@ -115,8 +120,8 @@
 							<option value="3">WordPress</option>
 							<option value="4">Site Template</option>
 						</select>
-					</form>
-					<button type="submit">Search Now</button>
+						<button type="submit">Search Now</button>
+					</form>		
 				</div>
 				<div class="search__inner-container-bg">
 					<form>
@@ -200,27 +205,29 @@
 				<div class="featured__anim">
 					<div class="featured__slider">
 						<div class="featured__container-box">
-							<div class="featured__container-img">
+							<div class="featured__container-img" style="background-image: url(../images/content/featured-bg.jpg);">
 								<a href="#">More Info</a>
 								<a href="#">Live Demo</a>
 							</div>
 							<div class="featured__descr-container">
-								<div class="featured__descr-title">One Page Resume Template</div>
-								<a href="#" class="featured__descr-user">AazzTech</a>
+								<h2 class="featured__descr-title">One Page Resume Template</h2>
+								<a href="#" class="featured__descr-user">
+									AazzTech
+									<img class="featured__descr-img" src="./images/icons/user-featured.jpg" alt="">
 								<a class="featured__descr-plugin" href="#">
 									<img src="../images/icons/product-descr.svg" alt="" />
 								</a>
 
-								<div class="featured__descr-text">
+								<p class="featured__descr-text">
 									Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
 									scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum
 									mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet
 									congue justo ut scelerisque.
-								</div>
+								</p>
 								<div class="featured__descr-btn">
-									<button type="button">website</button>
-									<button type="button">plugin</button>
-									<button type="button">landing page</button>
+									<a href="#">website</a>
+									<a href="#">plugin</a>
+									<a href="#">landing page</a>
 								</div>
 								<div class="featured__descr-info">
 									<div class="featured__descr-flex">
@@ -233,30 +240,31 @@
 							</div>
 						</div>
 					</div>
-
 					<div class="featured__slider">
 						<div class="featured__container-box">
-							<div class="featured__container-img">
+							<div class="featured__container-img" style="background-image: url(../images/content/featured-bg.jpg);">
 								<a href="#">More Info</a>
 								<a href="#">Live Demo</a>
 							</div>
 							<div class="featured__descr-container">
-								<div class="featured__descr-title">One Page Resume Template</div>
-								<span class="featured__descr-user">AazzTech</span>
+								<h2 class="featured__descr-title">One Page Resume Template</h2>
+								<a href="#" class="featured__descr-user">
+									AazzTech
+									<img class="featured__descr-img" src="./images/icons/user-featured.jpg" alt="">
 								<a class="featured__descr-plugin" href="#">
 									<img src="../images/icons/product-descr.svg" alt="" />
 								</a>
 
-								<div class="featured__descr-text">
+								<p class="featured__descr-text">
 									Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut
 									scelerisque the mattis, leo quam aliquet congue placerat mi id nisi interdum
 									mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet
 									congue justo ut scelerisque.
-								</div>
+								</p>
 								<div class="featured__descr-btn">
-									<button type="button" data-filter=".category-website">website</button>
-									<button type="button" data-filter=".category-plugin">plugin</button>
-									<button type="button" data-filter=".category-landing_page">landing page</button>
+									<a href="#">website</a>
+									<a href="#">plugin</a>
+									<a href="#">landing page</a>
 								</div>
 								<div class="featured__descr-info">
 									<div class="featured__descr-flex">
@@ -264,10 +272,12 @@
 										<button type="button" class="like-btn">56</button>
 										<button type="button" class="basket-btn">546</button>
 									</div>
+									<div class="rate-star"></div>
 								</div>
 							</div>
 						</div>
 					</div>
+					
 				</div>
 			</div>
 		</div>
@@ -312,22 +322,23 @@
 						<div class="product__item-content">
 							<a class="product__item-title" href="#"> E-commerce Shopping Cart </a>
 							<div class="product__item-block">
-								<a class="product__item-author" href="#">
+								<div class="product__item-author" href="#">
 									<div class="avatar" style="background-image: url(images/icons/user.png)"></div>
-									<span> Theme-Valley</span>
-								</a>
+									<a href="">Theme-Valley</a>
+								</div>
 								<a class="product__item-plugin" href="#">
 									<img src="./images/icons/plugin-icon.png" alt="" />
 								</a>
 							</div>
-							<div class="product__item-text">
+							<p class="product__item-text">
 								Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
 								the mattis, leo quam aliquet congue.
-							</div>
+							</p>
 							<div class="product__descr-info">
 								<div class="product__descr-box">
 									<button type="button" class="buy-btn">$20</button>
 									<button type="button" class="like-btn">90</button>
+									<div class="rate-star"></div>
 								</div>
 								<button type="button" class="basket-btn">246</button>
 							</div>
@@ -342,26 +353,27 @@
 							</div>
 						</div>
 						<div class="product__item-content">
-							<a class="product__item-title" href="#"> Marketify Coffee Shop </a>
+							<a class="product__item-title" href="#"> E-commerce Shopping Cart </a>
 							<div class="product__item-block">
-								<a class="product__item-author" href="#">
+								<div class="product__item-author" href="#">
 									<div class="avatar" style="background-image: url(images/icons/user.png)"></div>
-									<span> EchoThemey</span>
-								</a>
+									<a href="">Theme-Valley</a>
+								</div>
 								<a class="product__item-plugin" href="#">
-									<img src="./images/icons/plugin-icon2.png" alt="" />
+									<img src="./images/icons/plugin-icon.png" alt="" />
 								</a>
 							</div>
-							<div class="product__item-text">
+							<p class="product__item-text">
 								Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
 								the mattis, leo quam aliquet congue.
-							</div>
+							</p>
 							<div class="product__descr-info">
 								<div class="product__descr-box">
-									<button type="button" class="buy-btn">$18</button>
-									<button type="button" class="like-btn">48</button>
+									<button type="button" class="buy-btn">$20</button>
+									<button type="button" class="like-btn">90</button>
+									<div class="rate-star"></div>
 								</div>
-								<button type="button" class="basket-btn">46</button>
+								<button type="button" class="basket-btn">246</button>
 							</div>
 						</div>
 					</div>
@@ -374,27 +386,26 @@
 							</div>
 						</div>
 						<div class="product__item-content">
-							<a class="product__item-title" href="#"> Bryson - Portfolio Template </a>
+							<a class="product__item-title" href="#"> E-commerce Shopping Cart </a>
 							<div class="product__item-block">
-								<a class="product__item-author" href="#">
+								<div class="product__item-author" href="#">
 									<div class="avatar" style="background-image: url(images/icons/user.png)"></div>
-									<span> Artcorner</span>
-								</a>
+									<a href="">Theme-Valley</a>
+								</div>
 								<a class="product__item-plugin" href="#">
-									<img src="./images/icons/plugin-icon3.png" alt="" />
+									<img src="./images/icons/plugin-icon.png" alt="" />
 								</a>
 							</div>
-							<div class="product__item-text">
+							<p class="product__item-text">
 								Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
 								the mattis, leo quam aliquet congue.
-							</div>
+							</p>
 							<div class="product__descr-info">
 								<div class="product__descr-box">
-									<button type="button" class="buy-btn">$10</button>
-									<button type="button" class="like-btn">56</button>
-									<div class="rate-star"></div>
+									<button type="button" class="buy-btn">$20</button>
+									<button type="button" class="like-btn">90</button>
 								</div>
-								<button type="button" class="basket-btn">68</button>
+								<button type="button" class="basket-btn">246</button>
 							</div>
 						</div>
 					</div>
@@ -409,22 +420,23 @@
 						<div class="product__item-content">
 							<a class="product__item-title" href="#"> E-commerce Shopping Cart </a>
 							<div class="product__item-block">
-								<a class="product__item-author" href="#">
+								<div class="product__item-author" href="#">
 									<div class="avatar" style="background-image: url(images/icons/user.png)"></div>
-									<span> Theme-Valley</span>
-								</a>
+									<a href="">Theme-Valley</a>
+								</div>
 								<a class="product__item-plugin" href="#">
 									<img src="./images/icons/plugin-icon.png" alt="" />
 								</a>
 							</div>
-							<div class="product__item-text">
+							<p class="product__item-text">
 								Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
 								the mattis, leo quam aliquet congue.
-							</div>
+							</p>
 							<div class="product__descr-info">
 								<div class="product__descr-box">
 									<button type="button" class="buy-btn">$20</button>
 									<button type="button" class="like-btn">90</button>
+									<div class="rate-star"></div>
 								</div>
 								<button type="button" class="basket-btn">246</button>
 							</div>
@@ -439,25 +451,24 @@
 							</div>
 						</div>
 						<div class="product__item-content">
-							<a class="product__item-title" href="#"> Marketify Coffee Shop </a>
+							<a class="product__item-title" href="#"> E-commerce Shopping Cart </a>
 							<div class="product__item-block">
-								<a class="product__item-author" href="#">
+								<div class="product__item-author" href="#">
 									<div class="avatar" style="background-image: url(images/icons/user.png)"></div>
-									<span> EchoThemey</span>
-								</a>
+									<a href="">Theme-Valley</a>
+								</div>
 								<a class="product__item-plugin" href="#">
-									<img src="./images/icons/plugin-icon2.png" alt="" />
+									<img src="./images/icons/plugin-icon.png" alt="" />
 								</a>
 							</div>
-							<div class="product__item-text">
+							<p class="product__item-text">
 								Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
 								the mattis, leo quam aliquet congue.
-							</div>
+							</p>
 							<div class="product__descr-info">
 								<div class="product__descr-box">
 									<button type="button" class="buy-btn">$20</button>
 									<button type="button" class="like-btn">90</button>
-									<div class="rate-star"></div>
 								</div>
 								<button type="button" class="basket-btn">246</button>
 							</div>
@@ -472,24 +483,25 @@
 							</div>
 						</div>
 						<div class="product__item-content">
-							<a class="product__item-title" href="#"> Bryson - Portfolio Template </a>
+							<a class="product__item-title" href="#"> E-commerce Shopping Cart </a>
 							<div class="product__item-block">
-								<a class="product__item-author" href="#">
+								<div class="product__item-author" href="#">
 									<div class="avatar" style="background-image: url(images/icons/user.png)"></div>
-									<span> Artcorner</span>
-								</a>
+									<a href="">Theme-Valley</a>
+								</div>
 								<a class="product__item-plugin" href="#">
-									<img src="./images/icons/plugin-icon3.png" alt="" />
+									<img src="./images/icons/plugin-icon.png" alt="" />
 								</a>
 							</div>
-							<div class="product__item-text">
+							<p class="product__item-text">
 								Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
 								the mattis, leo quam aliquet congue.
-							</div>
+							</p>
 							<div class="product__descr-info">
 								<div class="product__descr-box">
 									<button type="button" class="buy-btn">$20</button>
 									<button type="button" class="like-btn">90</button>
+									<div class="rate-star"></div>
 								</div>
 								<button type="button" class="basket-btn">246</button>
 							</div>
@@ -506,18 +518,18 @@
 						<div class="product__item-content">
 							<a class="product__item-title" href="#"> E-commerce Shopping Cart </a>
 							<div class="product__item-block">
-								<a class="product__item-author" href="#">
+								<div class="product__item-author" href="#">
 									<div class="avatar" style="background-image: url(images/icons/user.png)"></div>
-									<span> Theme-Valley</span>
-								</a>
+									<a href="">Theme-Valley</a>
+								</div>
 								<a class="product__item-plugin" href="#">
 									<img src="./images/icons/plugin-icon.png" alt="" />
 								</a>
 							</div>
-							<div class="product__item-text">
+							<p class="product__item-text">
 								Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
 								the mattis, leo quam aliquet congue.
-							</div>
+							</p>
 							<div class="product__descr-info">
 								<div class="product__descr-box">
 									<button type="button" class="buy-btn">$20</button>
@@ -536,25 +548,24 @@
 							</div>
 						</div>
 						<div class="product__item-content">
-							<a class="product__item-title" href="#"> Marketify Coffee Shop </a>
+							<a class="product__item-title" href="#"> E-commerce Shopping Cart </a>
 							<div class="product__item-block">
-								<a class="product__item-author" href="#">
+								<div class="product__item-author" href="#">
 									<div class="avatar" style="background-image: url(images/icons/user.png)"></div>
-									<span> EchoThemey</span>
-								</a>
+									<a href="">Theme-Valley</a>
+								</div>
 								<a class="product__item-plugin" href="#">
-									<img src="./images/icons/plugin-icon2.png" alt="" />
+									<img src="./images/icons/plugin-icon.png" alt="" />
 								</a>
 							</div>
-							<div class="product__item-text">
+							<p class="product__item-text">
 								Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
 								the mattis, leo quam aliquet congue.
-							</div>
+							</p>
 							<div class="product__descr-info">
 								<div class="product__descr-box">
 									<button type="button" class="buy-btn">$20</button>
 									<button type="button" class="like-btn">90</button>
-									<div class="rate-star"></div>
 								</div>
 								<button type="button" class="basket-btn">246</button>
 							</div>
@@ -623,10 +634,10 @@
 						<div class="product__item-content">
 							<a class="product__item-title" href="#"> Bryson - Portfolio Template </a>
 							<div class="product__item-block">
-								<a class="product__item-author" href="#">
+								<div class="product__item-author" href="#">
 									<div class="avatar" style="background-image: url(images/icons/user.png)"></div>
-									<span> Artcorner</span>
-								</a>
+									<a href="">Theme-Valley</a>
+								</div>
 								<a class="product__item-plugin" href="#">
 									<img src="./images/icons/plugin-icon3.png" alt="" />
 								</a>
@@ -656,10 +667,10 @@
 						<div class="product__item-content">
 							<a class="product__item-title" href="#"> Marketify Coffee Shop </a>
 							<div class="product__item-block">
-								<a class="product__item-author" href="#">
+								<div class="product__item-author" href="#">
 									<div class="avatar" style="background-image: url(images/icons/user.png)"></div>
-									<span> EchoThemey</span>
-								</a>
+									<a href="">Theme-Valley</a>
+								</div>
 								<a class="product__item-plugin" href="#">
 									<img src="./images/icons/plugin-icon2.png" alt="" />
 								</a>
@@ -688,10 +699,10 @@
 						<div class="product__item-content">
 							<a class="product__item-title" href="#"> E-commerce Shopping Cart </a>
 							<div class="product__item-block">
-								<a class="product__item-author" href="#">
+								<div class="product__item-author" href="#">
 									<div class="avatar" style="background-image: url(images/icons/user.png)"></div>
-									<span> Theme-Valley</span>
-								</a>
+									<a href="">Theme-Valley</a>
+								</div>
 								<a class="product__item-plugin" href="#">
 									<img src="./images/icons/plugin-icon.png" alt="" />
 								</a>
@@ -720,10 +731,10 @@
 						<div class="product__item-content">
 							<a class="product__item-title" href="#"> E-commerce Shopping Cart </a>
 							<div class="product__item-block">
-								<a class="product__item-author" href="#">
+								<div class="product__item-author" href="#">
 									<div class="avatar" style="background-image: url(images/icons/user.png)"></div>
-									<span> Theme-Valley</span>
-								</a>
+									<a href="">Theme-Valley</a>
+								</div>
 								<a class="product__item-plugin" href="#">
 									<img src="./images/icons/plugin-icon.png" alt="" />
 								</a>
@@ -752,10 +763,10 @@
 						<div class="product__item-content">
 							<a class="product__item-title" href="#"> Bryson - Portfolio Template </a>
 							<div class="product__item-block">
-								<a class="product__item-author" href="#">
+								<div class="product__item-author" href="#">
 									<div class="avatar" style="background-image: url(images/icons/user.png)"></div>
-									<span> Artcorner</span>
-								</a>
+									<a href="">Theme-Valley</a>
+								</div>
 								<a class="product__item-plugin" href="#">
 									<img src="./images/icons/plugin-icon3.png" alt="" />
 								</a>
@@ -785,10 +796,10 @@
 						<div class="product__item-content">
 							<a class="product__item-title" href="#"> Marketify Coffee Shop </a>
 							<div class="product__item-block">
-								<a class="product__item-author" href="#">
+								<div class="product__item-author" href="#">
 									<div class="avatar" style="background-image: url(images/icons/user.png)"></div>
-									<span> EchoThemey</span>
-								</a>
+									<a href="">Theme-Valley</a>
+								</div>
 								<a class="product__item-plugin" href="#">
 									<img src="./images/icons/plugin-icon2.png" alt="" />
 								</a>
@@ -947,9 +958,8 @@
 					Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis,
 					leo quam aliquet diamcongue is laoreet elit metus.
 				</div>
-				<div class="sell-buy__btn left-btn">
-					<button>Become an Author</button>
-				</div>
+				
+				<a class="sell-buy__btn left-btn" href="#">Become an Author</a>
 			</div>
 			<div class="sell-buy__item right-bg">
 				<div class="sell-buy__logo">
@@ -960,9 +970,7 @@
 					Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis,
 					leo quam aliquet diamcongue is laoreet elit metus.
 				</div>
-				<div class="sell-buy__btn right-btn">
-					<button>Start Shopping</button>
-				</div>
+				<a  class="sell-buy__btn right-btn" href="">Start Shopping</a>
 			</div>
 		</div>
 	</section>
@@ -1034,53 +1042,54 @@
 				</div>
 				<div class="latest__news-inner">
 					<div class="latest__news-item">
-						<div class="latest__news-img"
-							style="background-image: url(../images/content/latest__news-img.jpg)"></div>
-						<div class="latest__news-title">Web Design Trends in 2017</div>
+							<a class="latest__news-img"
+							style="background-image: url(../images/content/latest__news-img.jpg)" href="#"></a>
+						<a class="latest__news-title" href="#">Web Design Trends in 2017</a>
 						<div class="latest__news-text">
 							Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the
 							mattis, leo quam aliquet congue.
 						</div>
 						<div class="latest__news-info">
-							<div class="latest__news-date">24 Feb 2017</div>
+							<a class="latest__news-date" href="#">24 Feb 2017</a>
 							<div class="latest__news-box">
-								<div class="latest__news-message">45</div>
+								<a class="latest__news-message" href="#">45</a>
 								<div class="latest__news-viewed">345</div>
 							</div>
 						</div>
 					</div>
 					<div class="latest__news-item">
-						<div class="latest__news-img"
-							style="background-image: url(../images/content/latest__news-img.jpg)"></div>
-						<div class="latest__news-title">Web Design Trends in 2017</div>
-						<div class="latest__news-text">
-							Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the
-							mattis, leo quam aliquet congue.
-						</div>
-						<div class="latest__news-info">
-							<div class="latest__news-date">15 Mar 2017</div>
-							<div class="latest__news-box">
-								<div class="latest__news-message">45</div>
-								<div class="latest__news-viewed">345</div>
-							</div>
+						<a class="latest__news-img"
+						style="background-image: url(../images/content/latest__news-img.jpg)" href="#"></a>
+					<a class="latest__news-title" href="#">Web Design Trends in 2017</a>
+					<div class="latest__news-text">
+						Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the
+						mattis, leo quam aliquet congue.
+					</div>
+					<div class="latest__news-info">
+						<a class="latest__news-date" href="#">24 Feb 2017</a>
+						<div class="latest__news-box">
+							<a class="latest__news-message" href="#">45</a>
+							<div class="latest__news-viewed">345</div>
 						</div>
 					</div>
-					<div class="latest__news-item">
-						<div class="latest__news-img"
-							style="background-image: url(../images/content/latest__news-img.jpg)"></div>
-						<div class="latest__news-title">Web Design Trends in 2017</div>
-						<div class="latest__news-text">
-							Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the
-							mattis, leo quam aliquet congue.
-						</div>
-						<div class="latest__news-info">
-							<div class="latest__news-date">20 Dec 2016</div>
-							<div class="latest__news-box">
-								<div class="latest__news-message">45</div>
-								<div class="latest__news-viewed">345</div>
-							</div>
-						</div>
+				</div>
+				<div class="latest__news-item">
+					<a class="latest__news-img"
+					style="background-image: url(../images/content/latest__news-img.jpg)" href="#"></a>
+				<a class="latest__news-title" href="#">Web Design Trends in 2017</a>
+				<div class="latest__news-text">
+					Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the
+					mattis, leo quam aliquet congue.
+				</div>
+				<div class="latest__news-info">
+					<a class="latest__news-date" href="#">24 Feb 2017</a>
+					<div class="latest__news-box">
+						<a class="latest__news-message" href="#">45</a>
+						<div class="latest__news-viewed">345</div>
 					</div>
+				</div>
+			</div>
+					
 				</div>
 			</div>
 		</div>
@@ -1096,13 +1105,14 @@
 				<div class="support__item-logo">
 					<img src="./images/content/support-logo.jpg" alt="" />
 				</div>
-				<div class="support__item-text">30 Days Money Back <span>Guarantee</span></div>
+				<div class="support__item-text">30 Days Money Back <a href="#">Guarantee</a> </div>
+				
 			</div>
 			<div class="support__item rigth-item">
 				<div class="support__item-logo">
 					<img src="./images/content/support-logo2.jpg" alt="" />
 				</div>
-				<div class="support__item-text">Fast and Friendly <span>Support</span></div>
+				<div class="support__item-text">Fast and Friendly <a href="#">Support</a></div>
 			</div>
 		</div>
 	</section>

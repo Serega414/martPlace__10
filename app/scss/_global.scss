@@ -6,9 +6,13 @@ html {
 *::after {
 	box-sizing: inherit;
 }
+h2{
+	margin: 0;
+}
 a {
 	display: inline-block;
 	text-decoration: none;
+	outline: none;
 }
 ul,
 li {
@@ -16,10 +20,23 @@ li {
 	padding: 0;
 	list-style: none;
 }
+html,
 body {
+	height: 100%;
 	font-family: 'Quicksand', sans-serif;
 	font-size: 15px;
 	line-height: 24px;
+}
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+.content {
+	flex: 1 0 auto;
+}
+.footer {
+	flex: 0 0 auto;
 }
 button {
 	cursor: pointer;
@@ -52,4 +69,34 @@ button {
 	color: $text;
 	font-size: 16px;
 	margin-bottom: 58px;
+}
+.breadcrumbs {
+	&__inner {
+		padding: 35px 0 30px;
+	}
+	&__list {
+		li {
+			color: #fff;
+			display: inline-block;
+			position: relative;
+			& + li {
+                padding-left: 24px;
+                &::before {
+                    content: '/';
+                    position: absolute;
+					left: 8px;
+                }
+			}
+			&:first-child{
+				a,span{
+					color: #fff;
+				}
+			}
+            &:last-child{
+                a,span{
+                    color: $breadcrumbs;
+                }
+            }
+		}	
+	}
 }

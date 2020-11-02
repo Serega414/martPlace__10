@@ -1,4 +1,28 @@
 $bg: #eff1f5;
-$bg_btn :#0674ec;
-$text:#555555;
-$border:#ececec;
+$bg_btn: #0674ec;
+$text: #555555;
+$border: #ececec;
+$breadcrumbs: #bfcad7;
+$bgc_icon :#7347c1;
+
+@mixin br50 {
+  border-radius: 50%;
+}
+
+@mixin br50px {
+  border-radius: 50px;
+}
+
+// reset style button
+@mixin rsb {
+  border: none;
+  outline: none;
+}
+
+// display: flex;
+// justify-content: space-between;
+
+@mixin df {
+  display: flex;
+  justify-content: space-between;
+}
