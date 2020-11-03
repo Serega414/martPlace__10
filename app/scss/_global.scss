@@ -6,7 +6,7 @@ html {
 *::after {
 	box-sizing: inherit;
 }
-h2{
+h2 {
 	margin: 0;
 }
 a {
@@ -58,10 +58,10 @@ button {
 }
 .global-header__title {
 	font-size: 36px;
-    margin-bottom: 34px;
-    span {
-        color: $bg_btn;
-    }
+	margin-bottom: 34px;
+	span {
+		color: $bg_btn;
+	}
 }
 .global-header__text {
 	max-width: 676px;
@@ -70,6 +70,29 @@ button {
 	font-size: 16px;
 	margin-bottom: 58px;
 }
+.lnr {
+	background-color: transparent;
+}
+button.lnr.lnr-cart {
+	padding-left: 25px;
+	position: relative;
+	color: $bg_btn;
+	&::before {
+		position: absolute;
+		left: 0px;
+	}
+}
+button.lnr.lnr-heart {
+	padding-left: 25px;
+	position: relative;
+	color: $text;
+	&::before {
+		position: absolute;
+		left: 0px;
+		color: $bgc_icon;
+	}
+}
+
 .breadcrumbs {
 	&__inner {
 		padding: 35px 0 30px;
@@ -80,23 +103,25 @@ button {
 			display: inline-block;
 			position: relative;
 			& + li {
-                padding-left: 24px;
-                &::before {
-                    content: '/';
-                    position: absolute;
+				padding-left: 24px;
+				&::before {
+					content: '/';
+					position: absolute;
 					left: 8px;
-                }
+				}
 			}
-			&:first-child{
-				a,span{
+			&:first-child {
+				a,
+				span {
 					color: #fff;
 				}
 			}
-            &:last-child{
-                a,span{
-                    color: $breadcrumbs;
-                }
-            }
-		}	
+			&:last-child {
+				a,
+				span {
+					color: $breadcrumbs;
+				}
+			}
+		}
 	}
 }
