@@ -20,12 +20,18 @@ $(function () {
         to: 300,
         prefix: "$"
 	});
-	
-	$('.icon-list').on('click', function(){
-		$('.product__item').addClass('list');
-	});
-	$('.icon-grid').on('click', function(){
+
+	$('.icon-th').on('click', function(){
 		$('.product__item').removeClass('list');
+		$('.icon-th').addClass('active');
+        $('.icon-server').removeClass('active');
 	});
+	$('.icon-server').on('click', function(){
+		$('.product__item').addClass('list');
+		$('.icon-server').addClass('active');
+        $('.icon-th').removeClass('active');
+		
+	});
+	
 	var mixer = mixitup('.products__inner');
 });

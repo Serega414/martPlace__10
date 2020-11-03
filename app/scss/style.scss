@@ -1155,9 +1155,10 @@
 	button {
 		background-color: transparent;
 		border: none;
+		font-weight: 500;
 		color: $text;
+		transition: all 0.5s;
 		&:hover {
-			transition: all 0.5s;
 			color: $bg_btn;
 		}
 	}
@@ -1174,6 +1175,8 @@
 		padding: 10px 76px 10px 10px;
 		border-color: rgb(236, 239, 242);
 		border-radius: 3px;
+		margin-right: 30px;
+		outline: none;
 	}
 }
 .filter__options-grid {
@@ -1187,26 +1190,24 @@
 		color: $text;
 		background-color: transparent;
 		border: none;
-		& + button {
+		/* & + button {
 			margin-left: 12px;
+		} */
+		&.active{
+			color: #08b8fd;
+			opacity: 1;
 		}
 	}
-	.icon-grid {
-		background-image: url(../images/icons/icon-grid.jpg);
-		background-repeat: no-repeat;
-		background-size: cover;
-		height: 20px;
-		width: 20px;
-	}
-	.icon-list {
-		background-image: url(../images/icons/icon-list.jpg);
-		background-repeat: no-repeat;
-		background-size: cover;
-		height: 20px;
-		width: 20px;
+	.icon-th,
+	.icon-server{
+		font-size: 24px;
+		color: $text;
+		opacity: 0.5;
 	}
 }
 // end filter__bar
+
+// new-items page
 
 // start product-page
 .product-page {
@@ -1245,12 +1246,13 @@
 }
 .category__list {
 	padding-top: 10px;
-	color: $text;
 	font-size: 16px;
 	li {
 		@include df;
 		position: relative;
 		padding: 5px 0 5px 20px;
+		transition: all 0.5s;
+		color: $text;
 		&::before {
 			content: '\f105';
 			position: absolute;
@@ -1261,7 +1263,6 @@
 		}
 		:hover {
 			color: $bg_btn;
-			transition: all 0.5s;
 		}
 	}
 }
@@ -1269,12 +1270,13 @@
 	padding-top: 10px;
 	color: $text;
 	font-size: 16px;
+
 	li {
 		padding: 5px 0 5px 20px;
 		position: relative;
+		transition: all 0.5s;
 		:hover {
 			color: $bg_btn;
-			transition: all 0.5s;
 		}
 		&::before {
 			content: '\f1db';
@@ -1360,10 +1362,11 @@
 		min-height: 160px;
 		margin-bottom: 0;
 	}
+	.product__item-content{
+		padding: 8px 30px;
+	}
 	.product__item-title {
 		font-size: 18px;
-		padding-top: 25px;
-		padding-right: 30px;
 		line-height: 0;
 		margin-bottom: 0;
 	}
@@ -1379,6 +1382,7 @@
 	}
 	.product__item-block {
 		position: relative;
+		padding: 4px 0;
 	}
 	.product__item-author {
 		top: -3px;
@@ -1395,6 +1399,7 @@
 		align-items: center;
 		padding-top: 12px;
 		padding-bottom: 14px;
+		margin-left: -7px;
 	}
 	.product__descr-info .basket-btn::after {
 		top: 3px;
@@ -1465,6 +1470,9 @@
 			min-height: 210px;
 			width: 229px;
 			float: left;
+		}
+		.product__item-content{
+			display: block;
 		}
 		.product__item-theme {
 			display: none;
