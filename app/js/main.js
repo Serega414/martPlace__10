@@ -21,15 +21,15 @@ $(function () {
         prefix: "$"
 	});
 
-	$('.icon-th').on('click', function(){
+	$('.lnr.lnr-frame-expand').on('click', function(){
 		$('.product__item').removeClass('list');
-		$('.icon-th').addClass('active');
-        $('.icon-server').removeClass('active');
+		$('.lnr.lnr-frame-expand').addClass('active');
+        $('.lnr.lnr-list').removeClass('active');
 	});
-	$('.icon-server').on('click', function(){
+	$('.lnr.lnr-list').on('click', function(){
 		$('.product__item').addClass('list');
-		$('.icon-server').addClass('active');
-        $('.icon-th').removeClass('active');
+		$('.lnr.lnr-list').addClass('active');
+        $('.lnr.lnr-frame-expand').removeClass('active');
 		
 	});
 	
