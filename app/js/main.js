@@ -33,5 +33,15 @@ $(function () {
 		
 	});
 	
+	$('.category__btn-list').on('click', function(){
+		$('.category__list').slideToggle();
+	});
+	$('.filter__btn-list').on('click', function(){
+		$('.filter__list').slideToggle();
+	});
+	$('.price__btn-list').on('click', function(){
+		$('.price-range__list').slideToggle();
+	});
+
 	var mixer = mixitup('.products__inner');
 });

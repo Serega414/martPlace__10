@@ -1129,6 +1129,7 @@
   box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
   border-radius: 4px;
   margin-bottom: 30px;
+  position: relative;
 }
 .aside__title {
   font-size: 20px;
@@ -1136,16 +1137,28 @@
   padding-bottom: 26px;
   border-bottom: 1px solid #e7ebee;
   position: relative;
-  &::before {
-    content: "\f105";
-    position: absolute;
-    right: 0;
-    font-size: 20px;
-    font-family: "icomoon";
-    transform: rotate(90deg);
-    cursor: pointer;
-  }
 }
+.category__btn-list,
+.filter__btn-list{
+	height: 20px;
+	width: 20px;
+	position: absolute;
+    top: 30px;
+    right: 20px;
+	@include rsb;
+	background-color: transparent;
+	&::before {
+		content: "\f105";
+		position: absolute;
+		right: 6px;
+		top: -1px;
+		font-size: 20px;
+		font-family: "icomoon";
+		transform: rotate(90deg);
+		cursor: pointer;
+	  }
+   }
+
 .category__list {
   padding-top: 10px;
   font-size: 16px;
@@ -1169,6 +1182,7 @@
     }
   }
 }
+
 .filter__list {
   padding-top: 10px;
   color: $text;
@@ -1212,6 +1226,26 @@
     @include br50px;
     color: #fff;
   }
+}
+.price__btn-list{
+		display: inline-block;
+	   height: 20px;
+	   width: 20px;
+	   position: absolute;
+	   top: 30px;
+	   right: 20px;
+	   @include rsb;
+	   background-color: transparent;
+	   &::before {
+		   content: "\f105";
+		   position: absolute;
+		   right: 6px;
+		   top: -1px;
+		   font-size: 20px;
+		   font-family: "icomoon";
+		   transform: rotate(90deg);
+		   cursor: pointer;
+		 }
 }
 .irs-min,
 .irs-max {
