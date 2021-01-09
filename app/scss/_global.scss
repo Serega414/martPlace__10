@@ -26,6 +26,7 @@ body {
 	font-family: 'Quicksand', sans-serif;
 	font-size: 15px;
 	line-height: 24px;
+	overflow-x: hidden;
 }
 .wrapper {
 	display: flex;
@@ -92,7 +93,9 @@ button.lnr.lnr-heart {
 		color: $bgc_icon;
 	}
 }
-
+span.lnr.lnr-arrow-left::before{
+	color: $text;
+  }
 .breadcrumbs {
 	&__inner {
 		padding: 35px 0 30px;
