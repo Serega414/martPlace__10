@@ -48,6 +48,9 @@ button {
 	margin: 0 auto;
 	padding: 0 15px;
 }
+.page-content{
+	background-color: $bg;
+}
 .box-border {
 	box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
 	background-color: #fff;
@@ -93,10 +96,15 @@ button.lnr.lnr-heart {
 		color: $bgc_icon;
 	}
 }
-span.lnr.lnr-arrow-left::before{
+span.lnr.lnr-arrow-left::before {
 	color: $text;
-  }
+}
+.single-box-global {
+	min-height: 180px;
+	background-image: linear-gradient(270deg, rgb(13, 62, 242) 0%, rgb(45, 47, 199) 46%, rgb(76, 31, 156) 100%);
+}
 .breadcrumbs {
+	padding: 0;
 	&__inner {
 		padding: 35px 0 30px;
 	}
@@ -113,11 +121,8 @@ span.lnr.lnr-arrow-left::before{
 					left: 8px;
 				}
 			}
-			&:first-child {
-				a,
-				span {
-					color: #fff;
-				}
+			a {
+				color: #fff;
 			}
 			&:last-child {
 				a,
@@ -127,4 +132,9 @@ span.lnr.lnr-arrow-left::before{
 			}
 		}
 	}
+}
+.single-box-title{
+	font-size: 30px;
+	color: #fff;
+	font-weight: 500;
 }
