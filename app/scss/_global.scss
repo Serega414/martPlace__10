@@ -15,7 +15,8 @@ a {
 	outline: none;
 }
 ul,
-li {
+li,
+p {
 	margin: 0;
 	padding: 0;
 	list-style: none;
@@ -48,7 +49,7 @@ button {
 	margin: 0 auto;
 	padding: 0 15px;
 }
-.page-content{
+.page-content {
 	background-color: $bg;
 }
 .box-border {
@@ -133,8 +134,252 @@ span.lnr.lnr-arrow-left::before {
 		}
 	}
 }
-.single-box-title{
+.single-box-title {
 	font-size: 30px;
 	color: #fff;
 	font-weight: 500;
 }
+.center-btn {
+	height: 700px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	.login-btn {
+		padding: 15px 50px;
+		border-radius: 50px;
+		background-color: #0674ec;
+		color: #fff;
+		box-shadow: 0px 5px 40px 0px rgba(82, 85, 90, 0.2);
+	}
+}
+// radio button
+
+.radio-box,
+.check-box {
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	clip: rect(0 0 0 0);
+	padding-left: 20px;
+	&:checked + .radio-style::before,
+	&:checked + .check-style::before {
+		content: '';
+		position: absolute;
+		width: 20px;
+		height: 20px;
+		background-image: url(../images/icons/radio.png);
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+}
+.radio-style,
+.check-style {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	border: 4px solid #e6e9ed;
+	border-radius: 50%;
+	margin-top: 32px;
+	cursor: pointer;
+}
+.radio-box:focus + .radio-style {
+	box-shadow: 0 0 0 1px #000;
+}
+
+// radio button
+.fancybox-active.compensate-for-scrollbar {
+	margin-right: 0;
+}
+// start modal
+#modal {
+	display: none;
+	background-color: #fff;
+	max-width: 555px;
+	width: 100%;
+	padding: 60px 0;
+	box-shadow: 0px 5px 40px 0px rgba(70, 71, 72, 0.2);
+}
+.login__title {
+	font-size: 26px;
+	color: #000;
+	font-weight: 500;
+	margin-bottom: 24px;
+	text-align: center;
+}
+.login__text {
+	font-size: 16px;
+	color: $text;
+	text-align: center;
+	padding-bottom: 30px;
+	border-width: 1px;
+	border-bottom: 1px solid $border;
+}
+.login-wrapper,
+.recovery-wrapper {
+	form {
+		max-width: 450px;
+		margin: 0 auto;
+	}
+	.login__info {
+		display: block;
+		color: #000;
+		font-size: 16px;
+		font-weight: 600;
+		margin-top: 30px;
+		padding-bottom: 14px;
+	}
+	.login__info-text {
+		height: 50px;
+		border: none;
+		background-color: #f4f5f8;
+		color: #898f96;
+		font-size: 16px;
+		padding-left: 20px;
+		padding-right: 20px;
+		margin-bottom: 30px;
+		display: block;
+		width: 100%;
+		&::placeholder {
+			color: #898f96;
+			font-size: 16px;
+			border: none;
+		}
+	}
+	.login-remember {
+		user-select: none;
+		width: 150px;
+		display: block;
+		padding-left: 30px;
+		position: relative;
+		margin-bottom: 30px;
+		font-size: 16px;
+		color: $text;
+		.check-style {
+			margin-top: 0;
+			left: 0;
+			top: 2px;
+		}
+	}
+	.aside__item-btn {
+		width: 190px;
+		display: inline-block;
+		padding: 15px 0;
+		margin-bottom: 35px;
+	}
+	.account-wrapper {
+		display: flex;
+		justify-content: space-between;
+		color: #898f96;
+		font-size: 16px;
+		a {
+			color: $bg_btn;
+			font-weight: 500;
+		}
+	}
+}
+// end modal
+
+// start recovery-wrapper
+.recovery-wrapper {
+	.aside__item-btn {
+		margin-bottom: 0;
+	}
+}
+
+// end recovery-wrapper
+
+// start register modal
+.animated-modal {
+	.login__text {
+		width: 430px;
+		margin: 0 auto;
+	}
+	.creat-acc {
+		color: #898f96;
+		font-size: 16px;
+		a {
+			color: $bg_btn;
+			font-weight: 500;
+		}
+	}
+}
+// end register modal
+
+// start animatedModal
+
+/* Start state */
+.animated-modal {
+	max-width: 550px;
+	border-radius: 4px;
+	overflow: hidden;
+	width: 100%;
+	padding: 60px 0;
+	box-shadow: 0px 5px 40px 0px rgba(70, 71, 72, 0.2);
+
+	transform: translateY(-50px);
+	transition: all 0.7s;
+}
+
+.animated-modal div {
+	transform: translateY(-50px);
+	opacity: 0;
+
+	transition-property: transform, opacity;
+	transition-duration: 0.4s;
+}
+
+/* Final state */
+.fancybox-slide--current .animated-modal,
+.fancybox-slide--current .animated-modal div {
+	transform: translateY(0);
+	opacity: 1;
+}
+
+/* Reveal content with different delays */
+.fancybox-slide--current .animated-modal div {
+	transition-delay: 0.2s;
+}
+
+// end animatedModal
+
+// start product-one button
+.aside__item-btn {
+	display: block;
+	margin: 0 auto;
+	@include rsb;
+	@include br50px;
+	padding: 20px 0;
+	width: 100%;
+	background-color: $bg_btn;
+	color: #fff;
+	&.down {
+		margin-top: 30px;
+		background-color: $purple;
+		position: relative;
+		span {
+			position: absolute;
+			top: 20px;
+			left: 80px;
+		}
+	}
+}
+// end product-one button
+
+// start not hover
+.pages-box {
+	.menu__list-drop {
+		.pages__item {
+			.column-two {
+				.nohover {
+					background-color: #0674ec;
+					border-radius: 5px;
+					color: #fff;
+				}
+			}
+		}
+	}
+}
+// end not hover

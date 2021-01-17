@@ -311,7 +311,7 @@
 										<div class="menu__list-drop">
 											<div class="pages__item">
 												<div class="page__martplace">MartPlace Pages</div>
-												<ul class="column-one" >
+												<ul class="column-one">
 													<li><a href="#">Home Page One</a></li>
 													<li><a href="#">Home Page Two</a></li>
 													<li><a href="#">Home Page Three</a></li>
@@ -358,7 +358,7 @@
 													<li><a href="#">Notifications</a></li>
 													<li><a href="#">Message Inbox</a></li>
 													<li><a href="#">Message Compose</a></li>
-													<li><a href="product-one.html">Product-one</a></li>
+													<li><a href="product-one.html">Product-one.html</a></li>
 													<li><a href="new-items.html">New-items</a></li>
 													<li><a href="login.html">Login</a></li>
 													<li><a href="register.html">Register</a></li>
@@ -396,19 +396,19 @@
 					<section class="single-box-global">
 						<div class="container">
 							<div class="breadcrumbs">
-									<div class="breadcrumbs__inner">
-										<ul class="breadcrumbs__list">
-											<li><a href="index.html">Home</a></li>
-											<li><a href="#">Wordpress</a></li>
-											<li><span href="#">Corporate & Business</span></li>
-										</ul>
-									</div>   
+								<div class="breadcrumbs__inner">
+									<ul class="breadcrumbs__list">
+										<li><a href="index.html">Home</a></li>
+										<li><span href="#">Login</span></li>
+									</ul>
+								</div>
 							</div>
-							<div class="single-box-title">
-								Wrost - Material Design Responsive Real Estate Template
-							</div>
+							<div class="single-box-title">Login</div>
 						</div>
 					</section>
+					<div class="center-btn">
+						<a class="login-btn" data-fancybox data-src="#modal" href="javascript:;" href="#">Login</a>
+					</div>
 				</header>
 			</div>
 			<footer class="footer">
@@ -492,6 +492,34 @@
 				</div>
 			</footer>
 		</div>
+
+		<div id="modal">
+			<div class="login__title">Welcome Back</div>
+			<div class="login__text">You can sign in with your username</div>
+			<div class="login-wrapper">
+				<form>
+					<label>
+						<span class="login__info">Username</span>
+						<input class="login__info-text" type="text" placeholder="Enter your username..." required />
+					</label>
+					<label>
+						<span class="login__info">Password</span>
+						<input class="login__info-text" type="text" placeholder="Enter your password..." required />
+					</label>
+					<label class="login-remember">
+						<input class="check-box" type="checkbox" checked />
+						<span class="check-style"></span>
+						Remember me
+					</label>
+					<button class="aside__item-btn" type="submit">Login Now</button>
+					<div class="account-wrapper">
+						<div class="lost-password">Lost your <a href="#">username</a> or <a href="#">password?</a></div>
+						<div class="creat-acc">Don't have an <a href="#">account?</a></div>
+					</div>
+				</form>
+			</div>
+		</div>
+
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<script src="/js/libs.min.js"></script>
 		<script src="/js/main.js"></script>
