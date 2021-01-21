@@ -2683,6 +2683,8 @@
 	padding: 115px 0;
 }
 .pricing-plan__inner {
+	display: flex;
+	justify-content: space-between;
 	.pricing-plan__item {
 		max-width: 360px;
 		background-color: #fff;
@@ -2707,7 +2709,7 @@
 				font-size: 18px;
 				position: absolute;
 				top: 20px;
-				left: 70px;
+				left: 64px;
 				font-weight: 500;
 			}
 			span {
@@ -2755,6 +2757,16 @@
 					height: 130px;
 				}
 			}
+		}
+		.plan__item-btn{
+			margin-top: 25px;
+			padding: 16px 75px;
+			color: #fff;
+			font-size: 18px;
+			font-weight: 500;
+			@include rsb;
+			background-color: #ff6a6c;
+			border-radius: 4px;
 		}
 	}
 }
